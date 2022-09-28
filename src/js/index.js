@@ -19,8 +19,9 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 
 
-function SimpleCounter (props)b {
-    return <div className ="counterwhole">
+function SimpleCounter (props) {
+    return (
+    <div className ="counterwhole">
       <div className = "calender">
         <i className ="far fa-clock"></i>
       </div>
@@ -28,7 +29,7 @@ function SimpleCounter (props)b {
       <div className ="position3">{props.digitThree}</div>
       <div className ="position2">{props.digitTwo}</div>
       <div className ="position1">{props.digitOne}</div>
-    </div>;
+    </div>)
 }
 SimpleCounter.propTypes = {
     digitFour:PropTypes.array,
@@ -48,6 +49,6 @@ setIntervall (function ()) {
 }
 //render your react application
 ReactDOM.render (
-    <SimpleCounter digitOne ={counter.indexOf()}/>
+    <SimpleCounter digitOne ={one}digitOne ={two}digitOne ={three}digitOne ={four} />,
     document.querySelector ('app')
-)
+);
