@@ -2,6 +2,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "bootstrap";
+import fontawesome from "@fortawesome/fontawesome";
+import faFlock from "@fortawesome/fontawesome-free-regular/faClock";
+fontawesome.config = {
+    autoReplaceSvg: 'nest'
+}
+fontawesome.library.add (faClock);
 
 // include your styles into the webpack bundle
 import "../styles/index.css";
