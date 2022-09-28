@@ -4,6 +4,8 @@ import ReactDOM from "react-dom";
 import "bootstrap";
 import fontawesome from "@fortawesome/fontawesome";
 import faFlock from "@fortawesome/fontawesome-free-regular/faClock";
+import './icons.js'
+
 fontawesome.config = {
     autoReplaceSvg: 'nest'
 }
@@ -18,7 +20,9 @@ import Home from "./component/home.jsx";
 
 function SimpleCounter (props)b {
     return <div className ="counterwhole">
-      <div className = "calender"></div>
+      <div className = "calender">
+        <i className ="far fa-clock"></i>
+      </div>
       <div className ="position4"></div>
       <div className ="position3"></div>
       <div className ="position2"></div>
