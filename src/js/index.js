@@ -46,9 +46,9 @@ setIntervall (function () {
     const one = Math.floor (counter/1)
 
     counter++;
-}
+});
 //render your react application
 ReactDOM.render (
-    <SimpleCounter digitOne ={one}digitOne ={two}digitOne ={three}digitOne ={four} />,
+    <SimpleCounter digitOne ={one} digittwo ={two} digitthree ={three} digitfour ={four} />,
     document.querySelector ('app')
 );
