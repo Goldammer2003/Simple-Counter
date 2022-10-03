@@ -10,7 +10,7 @@ let thousandsDigit = Math.floor ( (seconds/1000) % 10);
 let hundretsDigit = Math.floor ((seconds/100) % 10); 
 let tensDigit = Math.floor ((seconds/10)%10);
 let singleDigit = Math.floor ((seconds/1)%10);
-}
+
 
 useEffect(() =>{
     setTimeout(
