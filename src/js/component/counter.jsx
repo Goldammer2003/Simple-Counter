@@ -26,21 +26,22 @@ const clickHandler = () => {
 
 
 }
-return (
+
+
+return(
     <div>
-        <div className ="d-flex flex-row clock-BG">
-            <div className = "clock-indices">
+        <div className="d-flex flex-row clock-BG">
+            <div className="clock-indices">
                 <h2>
-                    <i className ="fas fa-clock"></i>
+                <i className="fas fa-clock"></i>
                 </h2>
             </div>
-           <ClockDigits value = {singleDigit}/>
-           <Clockdigits value = {tenDigit}/>
-           <ClockDigits value = {hundredGiti}/>
-           <ClockDigits value = {thousendsDigit}
+            <ClockDigits value={thousandsDigit}/>
+            <ClockDigits value={hundredsDigit}/>
+            <ClockDigits value={tensDigit}/>
+            <ClockDigits value={singleDigit}/>
         </div>
-        <button onClick = {()=> {clickHandler ()}}Click here </button>
-        
-    </div>
-)
+        <button onClick={() => {clickHandler()}}>Click to triger useEffect</button>
+    </div>)
+};
 export default Counter;
